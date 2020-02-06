@@ -1,7 +1,7 @@
 pipeline {
    agent any
    stages {
-     stage {'build'} {
+     stage('build') {
       steps {
         echo "build automation"
 	sh './gradelw build --no--daemon'
